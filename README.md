@@ -1,1 +1,4 @@
-# SQLquery
+SELECT `product`.`name_product`, `category`.`name_category` FROM `dis_product`
+  LEFT JOIN `product` on `product`.`id_product` = `dis_product`.`product_id`
+  LEFT JOIN `category` on `category`.`id_category` = `dis_product`.`category_id`
+  ORDER BY `product`.`name_product`
